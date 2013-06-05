@@ -1,0 +1,166 @@
+{% extends "layout/main.html" %}
+
+{% block styles %}{% endblock %}
+
+{% block body %}
+
+
+<div id="container">       
+    <div class = "row-fluid">
+        <div class = "span12">
+             <div class = "row-fluid">
+           <div class = "span6 offset3" > <!--this is middle column -->
+                <div class = "wide_column_header" id = "unlock">
+                 <article>                       
+                    <a href = "/boston"><img src="{{ url_for('static', filename='img/unlock_1.png') }}" width = "800" height = "600" class = "thumb"></a>
+                    <br />
+                    <h2 class = "project-name"><a href = "/boston">UNLOCK BOSTON</a></h2>
+                    <br/>
+                    <p><i>Unlock Boston</i> will make the hidden history of Boston come to life in a new and accessible way.
+                        From a deadly flood of molasses that buried Boston’s waterfront to a book bound wholly in the skin of a convicted thief, the city is full of history that has been lost to time. <i>Unlock Boston</i> is ready to tell those stories. Each story has a dedicated video segment, accessed by a point of interest on a <a href = "http://www.unlock-boston.com" target = "_blank">map</a>. In collaboration with <a href = "http://www.lucashapiro.com" target = "_blank">Luca Shapiro</a> and <a href = "http://www.gavinmhackeling.com" target = "_blank">Gavin Hackeling</a>. My roles: UX design, UX research, Front-end development. 
+                        <br/>Please visit: <a href = "http://www.unlock-boston.com" target = '_blank'><b>http://www.unlock-boston.com</b></a> <br /> 
+                 </article>
+                </div>
+
+                <div class = "wide_column_header" id = "whitney">
+                 <article>                       
+                    <a href = "/whitney"><img src="{{ url_for('static', filename='img/whitney_1.png') }}" width = "800" height = "600" class = "thumb"></a>
+                    <br />
+                    <h2 class = "project-name"><a href = "/whitney">WHITNEY MUSEUM OF AMERICAN ART</a></h2>
+                    <br/>
+                    <p>As an intern of Digital Media department at <i>Whitney Museum of American Art</i>, I have been actively involved in creation and maintenance of <i>Whitney Museum</i>'s official website under the guidance of my supervisors. My roles: Contents Management, Research, Motion graphics. 
+                    <br/>Please visit: <a href = "http://www.whitney.org" target = '_blank'><b>http://www.whitney.org</b></a><br /> 
+                 </article>
+                </div>       
+
+                <div class = "wide_column_header" id = "smartmat">
+                <article>
+                    <a href = "/smartmat" >
+                    <img class = "thumb" src = "{{ url_for('static', filename='img/smartmat_mobile.png') }}" width = "800" height = "600" alt="Smart Mat"></a>
+                    <br />
+                    <h2 class = "project-name"><a href = "/smartmat">SMART MAT</a></h2>
+                    <br/>
+                    <p><i>Smart Mat</i> lets you track your yoga practice in a new way. By tracking the changes in your body's balance, <i>Smart Mat</i> shows you the patterns of your movement and flow and offers focused feedback that helps you improve your yoga practice. It uses force–resistance sensors built into a yoga mat to measure the distribution of your body weight as you move through the balance poses of your yoga practice.
+                    <i>Smart Mat</i> is currently under development. In collaboration with <a href = "http://www.eliseporter.com" target = "_blank">Elise Porter</a>. My roles: Concept, Interaction Design, Back-end development</p>
+                </article>
+                </div>
+
+           
+
+                <div class = "wide_column_header" id = "gotham_web">
+                  <article>
+                    <a href ="/gotham">
+                    <img class = "thumb" src = "{{ url_for('static', filename='img/gotham_1.png') }}" width = "800" height = "600" alt="Gotham Project"></a>   
+                <br />
+                <h2 class = "project-name"><a href = "/gotham">GOTHAM PROJECT</a></h2>
+                <br/>
+                <p><i>Gotham Project</i> is a fullscreen video website about an interactive performance <i>Gotham Project</i> that consists of three live projection screens, electronic musical interfaces and interactive costumes. The performance was to explore the possibilities of live performance, and the website is designed to have the same immersive experience via online. My roles: Concept, Design, Front-end Development, Visual effects.
+                <br/>Please visit: <a href = "http://www.gothamproject.info" target="_blank"><b>http://www.gothamproject.info</b></a></p>
+            </article>
+            </div>
+           
+            
+            <div class = "wide_column_header" id = "macarons">
+                <article>
+                <a href = "/macarons" >
+                <img class = "thumb" src = "{{ url_for('static', filename='img/macarons_1.png') }}" width = "800" height = "600" alt="Macarons and Twitter"></a>
+                <br />
+                <h2 class = "project-name"><a href = "/macarons">MACARONS AND TWITTER</a></h2>
+                <br/>
+                <p><i>Macarons and Twitter</i> is an website that shows the locations of the latest tweets containing the word "macarons" and their geolocations. It uses Twitter API in order to identify relevant tweets and where they were tweeted.
+                <i>Macarons and Twitter</i> also uses WebGL to display the data in real–time. My roles: Concept, Design, Front-end development
+                <br/>Please visit:
+                <a href = "http://www.macaronsandtwitter.com" target="_blank"><b>http://www.macaronsandtwitter.com</b> </a></p>
+                </article>
+            </div>
+      
+            <div class = "wide_column_header" id = "palimpsest">
+            <article>
+              <div>
+                    <a href = "/palimpsest">
+                    <img class = "thumb"src="{{ url_for('static', filename='img/palimpsest_1_thumb.png') }}" width = "500" height = "333" alt="Palimpsest" > </a>
+                    <br />
+                    <h2 class = "project-name"><a href = "/palimpsest">PALIMPSEST</a></h2>
+                    <br/>
+                    <p><i>Palimpsest</i> is a location-based mobile application that lets user discover hidden stories of New York City. Using GPS data, <i>Palimpsest</i> helps the users explore nearby historical places by giving cues such as location pins and storytelling videos. In collaboration with <a href = "http://www.lucashapiro.com" target = "_blank">Luca Shapiro</a>. My roles: UX design, Back-end development</p>
+              </div>
+            </article>
+            </div> 
+
+
+            
+           <!--  <div class = "wide_column_header" id = "things_you_can">
+                <article>
+                <iframe class = "displayed" src="http://player.vimeo.com/video/34186021?byline=0&amp;portrait=0&amp;color=f3f2e3" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <br />
+                <h2 class = "project-name">THINGS YOU CAN TELL JUST BY LISTENING TO</h2>
+                <br/>
+                <p><i>Things You Can Tell Just By Listening To</i> is an wireless interactive toy that helpss children learn how to
+                    use the stethoscope properly. Players can place the stethoscope on each doll's chest, back, or arm. Embedded sensors allow the players to hear sounds that vary depending on the health status of the dolls and where the stethoscope was placed.</p>
+            </article>
+            </div>
+ -->
+           <!--  <div class = "wide_column_header" id = "color_of_revolt">
+                <article>
+                <iframe class = "displayed" src="http://player.vimeo.com/video/48770506?byline=0&amp;portrait=0&amp;color=f3f2e3" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <br />
+                <h2>COLOR OF REVOLT</h2>
+                <p><i>Color of Revolt</i> is an installation that interacts with people co-existing in the same space. It features hanging columns of fabric names <i>Bojagi</i>, and based on the movement detected by the sensor, each row of fabrics flows and the accompanying soothing sound is composed. In a way, the traditionally static artefact <i>Bojagi</i> shares more joyful gestrues with the visitors. In collaboration with <a href = "http://itp.nyu.edu/~bhl236/blog" target = "_blank">Tony Lim</a> and <a href = "http://www.yoonjochoi.com" target = "_blank">Yoonjo Choi</a> for fabric artist Seungchul Lee. My role: UX design
+            </article>
+            </div> -->
+
+            
+    
+        </div> <!-- this is closing "span6"> -->
+      <!-- </section> -->
+
+
+                 <!-- <section id = "prints">
+                    <img src = "{{ url_for('static', filename='img/prints.png') }}" class = "subtitle"> <br />
+                    <img src = "{{ url_for('static', filename='img/line_short.png') }}" class = "subtitle"> <br/>
+
+                    <article>                
+                        <a href = "http://itp.nyu.edu/~hs1571/hiyeblog/wp-content/uploads/2012/08/hiye_sva_restaurant1.jpg" rel = "lightbox[restaurant]" title = "Cutout">
+                        <img src="{{ url_for('static', filename='img/restaurant_1_thumb.jpg') }}" width = "270" height = "142" alt="Restaurant: image 1 0f 3 thumb" ></a>
+                        <a href = "http://itp.nyu.edu/~hs1571/hiyeblog/wp-content/uploads/2012/08/hiye_sva_restaurant21.jpg" rel = "lightbox[restaurant]" title = "Bleed"></a>
+                        <a href = "http://itp.nyu.edu/~hs1571/hiyeblog/wp-content/uploads/2012/08/hiye_sva_restaurant4.jpg" rel = "lightbox[restaurant]" title = "Cutout 2"></a>
+                        <h3> Tratto Avanti Restaurant </h3>
+                        <p> A self-driven advertising design project for an imaginary restaurant.</p>                    
+                    </article>
+                    <br />
+
+                    <article>                  
+                        <a href = "http://itp.nyu.edu/~hs1571/hiyeblog/wp-content/uploads/2012/08/hiye_sva_book_design.jpg" rel = "lightbox[book]" title = "Cover">
+                        <img src="{{ url_for('static', filename='img/book_1_thumb.jpg') }}" width = "270" height = "321" alt="Restaurant: image 1 0f 4 thumb" ></a>
+                        <a href = "http://itp.nyu.edu/~hs1571/hiyeblog/wp-content/uploads/2012/08/hiye_sva_book_design3.jpg" rel = "lightbox[book]" title = "Index"></a>
+                        <a href = "http://itp.nyu.edu/~hs1571/hiyeblog/wp-content/uploads/2012/08/hiye_sva_book_design4.jpg" rel = "lightbox[book]" title = "Preface"></a>
+                        <a href = "http://itp.nyu.edu/~hs1571/hiyeblog/wp-content/uploads/2012/08/hiye_sva_book_design5.jpg" rel = "lightbox[book]" title = "Page"></a>
+                        <h3> The View From The Center Of The Universe</h3>
+                        <p>A self-driven redesign project for the book <i>The View From The Center Of The Universe</i>.<p>
+                    </article>
+
+
+                 </section> --> 
+
+      <section>
+        <div class = "span4" id = "contact">
+       
+        </div>
+        </section>
+
+
+        <section>
+        
+
+    </div> <!-- closing div row for the columns -->
+    </section>
+    
+    </div><!-- closing whole row including header-->          
+    </div> <!-- /container -->
+
+
+            
+
+{% endblock %}
+
+
