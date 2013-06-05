@@ -13,56 +13,11 @@ app = Flask(__name__)   # create our flask app
 def index():
 	return render_template("main.html")
 
-@app.route("/boston")
-def boston():
-	return render_template("boston.html")
-
-@app.route("/whitney")
-def whitney():
-	return render_template("whitney.html")
-
-@app.route("/gotham")
-def gotham():
-	return render_template("gotham.html")
-
-@app.route("/macarons")
-def macarons():
-	return render_template("macarons.html")
-
-@app.route("/palimpsest")
-def palimpsest():
-	return render_template("palimpsest.html")	
-
-@app.route("/smartmat")
-def smartmat():
-	return render_template("smartmat.html")	
+# @app.route("/boston")
+# def boston():
+# 	return render_template("boston.html")
 
 
-
-
-
-####################################
-# below is for RWET class blogging.#
-####################################
-@app.route("/rwet")
-def rwet():
-	return render_template("rwet.html")
-
-@app.route("/rwet/week2")
-def week2():
-	return render_template("week2.html")
-
-@app.route("/rwet/week4")
-def week4():
-	return render_template("week4.html")
-
-@app.route("/rwet/midterm")
-def midterm():
-	return render_template("midterm.html")
-
-@app.route("/rwet/final")
-def final():
-	return render_template("final.html")
 
 
 # error handler
