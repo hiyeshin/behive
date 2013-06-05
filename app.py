@@ -13,9 +13,9 @@ app = Flask(__name__)   # create our flask app
 def index():
 	return render_template("main.html")
 
-# @app.route("/boston")
-# def boston():
-# 	return render_template("boston.html")
+@app.route("/about")
+def boston():
+	return render_template("about.html")
 
 
 
