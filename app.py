@@ -2,7 +2,7 @@ import os, datetime
 import re
 from unidecode import unidecode
 
-from flask import Flask, session, request, url_for, escape, render_template, json, jsonify, flash, redirect, abort
+from flask import Flask,request, url_for, render_template, json, jsonify,redirect, abort
 # session is just a dictionary and flask converts it to cookie
 import models
 
@@ -10,29 +10,51 @@ from flask.ext.mongoengine import mongoengine
 
 import requests
 
-from flaskext.bcrypt import Bcrypt
-
-#custom user library - maps User object to User model
-# from libs.user import *
-
-app = Flask(__name__)   # create our flask app
+app = Flask(__name__)
 app.config['CSRF_ENABLED'] = False
-app.secret_key = os.environ.get('SECRET_KEY')
-
-flask_bcrypt = Bcrypt(app)
 
 #  MONGOLAB_URI=mongodb://localhost:27017/dwdfall2012
 
 mongoengine.connect('mydata', host=os.environ.get('MONGOLAB_URI'))
-
+app.logger.debug("Connecting to MongoLabs")
 
 # this is our main page
 @app.route("/", methods = ["GET", "POST"])
-
 def index():
-	return render_template("main.html")
+	# get email form from models.py
+	user_form = models.UserForm(request.form)
 
-@app.route("/about")
+	# if form was submitted and it is valid...
+	if request.method == "POST" and user_form.validate():
+
+		# get form data - create new idea
+		user = models.User()
+		user.email = request.form.get('email','anonymous')
+		user.save() # save it
+
+		# redirect to the new idea page
+		return redirect('/thanks' )
+
+	else:
+
+		#for form management, checkboxes are weird (in wtforms)
+		#prepare checklist items for form
+		#you'll need to take the form checkboxes submitted
+		#and idea_form.categories list needs to be populated.
+		if request.method=="POST" and request.form.getlist('categories'):
+			for c in request.form.getlist('categories'):
+				user_form.categories.append_entry(c)
+
+		# render the template
+		templateData = {
+			'users' : models.User.objects(),
+			#'categories' : categories,
+			'form' : user_form
+		}
+
+		return render_template("main.html", **templateData)
+
+@app.route("/thanks")
 def boston():
 	return render_template("about.html")
 
