@@ -14,8 +14,9 @@
 
 
 
-        <form method="POST" action="/" id = "email">
-            <img src="{{ url_for('static', filename='img/third.png') }}">
+        <form method="POST" action="/" class = "email">
+            <img src="{{ url_for('static', filename='img/third.png') }}" >
+            <h3>
             {% if form.errors %}
 
                 <ul class="errors">
@@ -29,8 +30,8 @@
 
             {{ form.email.label(class='myLabelCssClass') }}
             {{ form.email(class='myTextboxCssClass') }}
-
-
+            </h3>
+            <br/>
             <button type="submit" class="email-btn">Submit</button>
         </form>
     </div>

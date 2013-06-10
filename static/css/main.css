@@ -37,7 +37,7 @@ body{
 
 
 @font-face {
-font-family: "Georgia", Times New Roman, Serif;
+font-family: "Courier", Georgia, Serif;
 font-weight: normal;
 font-style: normal;
 }
@@ -60,12 +60,22 @@ font-style: normal;
 	
 }*/
 
-#email{
+.email{
 	position:absolute;
 	margin-top: 22%;
-	margin-left: 50px;
+	margin-left: 35px;
 	padding-top: 11px;
-	padding-left: 30px;
+	padding-left: 52px;
+	/*margin-right: 10%;*/
+
+}
+
+#emaildesc{
+	position:absolute;
+	margin-top: 22%;
+	margin-left: 20px;
+	padding-top: 11px;
+	padding-left: 60px;
 	/*margin-right: 10%;*/
 
 }
@@ -81,12 +91,13 @@ font-style: normal;
 	border-radius:20px;
 	border:0px solid #dcdcdc;
 	display:inline-block;
-	color:#22;
+	color:#222222;
 	font-family:Courier New;
 	font-size:21px;
 	font-weight:normal;
 	padding:8px 24px;
 	text-decoration:none;
+	margin-top: -15px;
 }
 
 .email-btn:active {
@@ -113,7 +124,7 @@ h2 a:hover{
 */
 
 h3{
-	font:normal 12px Georgia;
+	font:normal 12px Courier;
 	/*line-height:30px;*/
 }
 
