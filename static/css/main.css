@@ -42,42 +42,24 @@ font-weight: normal;
 font-style: normal;
 }
 
-/*#first {
-	position: relative;
-	margin-top: 0%;
-	margin-left: 22%;
-	padding-top: 30px;
-	padding-left: 10%;
-	
-}
-
-#second {
-	position: relative;
-	margin-top: 3%;
-	margin-left: 22%;
-	padding-top: 30px;
-	padding-left: 45px;
-	
-}*/
 
 .email{
 	position:absolute;
 	margin-top: 22%;
-	margin-left: 35px;
-	padding-top: 11px;
+	margin-left: 45px;
+	padding-top: 15px;
 	padding-left: 52px;
 	/*margin-right: 10%;*/
 
 }
 
-#emaildesc{
-	position:absolute;
-	margin-top: 22%;
-	margin-left: 20px;
-	padding-top: 11px;
-	padding-left: 60px;
-	/*margin-right: 10%;*/
+#third {
+	margin-left:-10px;
+}
 
+#btnbtn {
+	margin-left: 62px;
+	padding-left: 30px;
 }
 
 .email-btn {
@@ -93,9 +75,9 @@ font-style: normal;
 	display:inline-block;
 	color:#222222;
 	font-family:Courier New;
-	font-size:21px;
+	font-size:18px;
 	font-weight:normal;
-	padding:8px 24px;
+	padding:4px 24px;
 	text-decoration:none;
 	margin-top: -15px;
 }
@@ -135,46 +117,6 @@ p{
 	line-height:18px;
 }
 
-
-
-/*
-ul{
-	list-style-type:none;
-	margin:0;
-	padding-bottom:180px;
-	overflow: hidden;
-}
-
-
-li{
-	display:inline;
-	float: right;
-}
-
-
-li a{
-	width:80px;
-	display: block;
-	padding-left: 20px;
-}
-
-li a:hover{
-	
-	color: #887072;
-	text-decoration: none;
-}
-
-img a:hover{
-	display: block;
-
-}
-
-
-p a:hover{
-
-	border-bottom: 1px dotted #000; 
-	text-decoration: none;
-}*/
 
 
  #container {
