@@ -10,10 +10,12 @@
     <div class = "row-fluid">
         <div class = "span12">
              <div class = "row-fluid">
-                 <div class="span6">
+                 <div class="span6 offset6">
+
 
 
         <form method="POST" action="/" id = "email">
+            <img src="{{ url_for('static', filename='img/third.png') }}">
             {% if form.errors %}
 
                 <ul class="errors">
@@ -27,9 +29,6 @@
 
             {{ form.email.label(class='myLabelCssClass') }}
             {{ form.email(class='myTextboxCssClass') }}
-
-
-            <br>
 
 
             <button type="submit" class="email-btn">Submit</button>
