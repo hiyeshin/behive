@@ -41,7 +41,39 @@ font-weight: normal;
 font-style: normal;
 }
 
+#email{
+	position:relative;
+	margin-top: 40%;
+	padding-top: 11%;
+	margin-left: 52%;
+	padding-left: 80%;
+	/*margin-right: 10%;*/
 
+}
+
+.email-btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#48bab0;
+	/*background-color:transparent;*/
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:0px solid #dcdcdc;
+	display:inline-block;
+	color:#22;
+	font-family:Courier New;
+	font-size:21px;
+	font-weight:normal;
+	padding:8px 24px;
+	text-decoration:none;
+}
+
+.email-btn:active {
+	position:relative;
+	top:1px;
+}
 h1{	
 	color: #887072;
 	font:italic 22px Georgia;
@@ -100,7 +132,7 @@ p{
 	line-height:18px;
 }
 
-
+/*
 ul{
 	list-style-type:none;
 	margin:0;
@@ -137,19 +169,8 @@ p a:hover{
 
 	border-bottom: 1px dotted #000; 
 	text-decoration: none;
-}
+}*/
 
-#line-longest{
-	position: absolute;
-	z-index:900;
-	top: 115px;
-	left: 9%;
-/*	height:253px;
-	width:932px;*/
-	overflow:hidden;
-	/*color:#000;*/
-	padding-bottom: 150px;
-}
 
  #container {
 	position: absolute;
@@ -163,21 +184,6 @@ p a:hover{
 	/*background-image: url('/static/img/linedpaper.png');*/
 }
 
-
-.wide_column_header{
-	position: relative;
-	margin-top: 0px;
-	/*margin-left: -20px;*/
-	/*padding-left: 0px;*/
-	/*padding-right: 70px;*/
-	padding-bottom: 100px;
-	/*float: center;*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-
-}
 
 #push, #footer{
 	font: normal 11px "Georgia";
@@ -206,29 +212,16 @@ article:hover {
 }
 
 
-#header{
+/*#header{
 	position: absolute;
 	z-index:1000;
 	top: 25px;
 	left: 6%;
-/*	height:253px;
-	width:932px;*/
 	overflow:hidden;
 	color:#000;
-}
+}*/
 
 
-
-
-#introduction {
-	position: relative;
-	top: 300 px;
-	padding-left: 140px;
-	padding-top: 30px;
-	/*padding-right: -0px;*/
-	margin-right: -70px;
-	float: left;
-}
 
 .dropcap{
 	color: #887072;
@@ -239,79 +232,6 @@ article:hover {
 }
 
 
-.subtitle{
-	z-index: 1000;
-}
-
-
-#resume {
-	position: relative;
-	top: 300 px;
-	padding-left: 140px;
-	padding-right: 20px;
-	margin-right: -70px;
-	float: left;
-}
-
-
-#prints {
-	position: relative;
-	top: 300 px;
-	padding-left: 140px;
-	/*padding-right: 20px;*/
-	margin-right: -70px;
-	float: left;
-	/*z-index:1000;*/
-}
-
-
-#slides_restaurant{
-	position: absolute;
-	top:55px;
-	bottom: 55px;
-	/*left:4px;*/
-	/*z-index:1200;	*/
-}
-
-#slides_book{
-	position: relative;
-	top:155px;
-	bottom: 55px;
-	/*left:4px;*/
-	/*z-index:1200;	*/
-}
-
-
-
-
-
 .rollover{
 	display: block;
-}
-
-
-#contact {
-	position: relative;
-	top: 50 px;
-	margin-top: 5px;
-	/*margin-left: -160px;*/
-	margin-right: 55px;
-	margin-bottom:50px;
-	padding-top: 20px;
-	padding-left: 35px;
-	/*padding-bottom: 200px;*/
-	padding-right: 60px;
-	float: right;
-}
-
-.contacts {
-	font: italic 16px "ltc-bodoni-175";
-	letter-spacing: 2px;
-}
-
-
-.thumb {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
 }

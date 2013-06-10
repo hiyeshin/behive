@@ -13,8 +13,6 @@ import requests
 app = Flask(__name__)
 app.config['CSRF_ENABLED'] = False
 
-#  MONGOLAB_URI=mongodb://localhost:27017/dwdfall2012
-
 mongoengine.connect('mydata', host=os.environ.get('MONGOLAB_URI'))
 app.logger.debug("Connecting to MongoLabs")
 
@@ -36,11 +34,6 @@ def index():
 		return redirect('/thanks' )
 
 	else:
-
-		#for form management, checkboxes are weird (in wtforms)
-		#prepare checklist items for form
-		#you'll need to take the form checkboxes submitted
-		#and idea_form.categories list needs to be populated.
 		if request.method=="POST" and request.form.getlist('categories'):
 			for c in request.form.getlist('categories'):
 				user_form.categories.append_entry(c)
@@ -48,16 +41,14 @@ def index():
 		# render the template
 		templateData = {
 			'users' : models.User.objects(),
-			#'categories' : categories,
 			'form' : user_form
 		}
 
 		return render_template("main.html", **templateData)
 
 @app.route("/thanks")
-def boston():
-	return render_template("about.html")
-
+def thanks():
+	return render_template("thanks.html")
 
 
 # error handler
@@ -70,6 +61,6 @@ def page_not_found(error):
 if __name__ == "__main__":
 	app.debug = True
 	
-	port = int(os.environ.get('PORT', 5000)) # locally PORT 5000, Heroku will assign its own port
+	port = int(os.environ.get('PORT', 5000))
 	app.run(host='0.0.0.0', port=port)
 
