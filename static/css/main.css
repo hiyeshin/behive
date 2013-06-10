@@ -57,6 +57,7 @@ font-style: normal;
 	margin-left:-10px;
 }
 
+
 #btnbtn {
 	margin-left: 62px;
 	padding-left: 30px;
@@ -87,7 +88,9 @@ font-style: normal;
 	top:1px;
 }
 
+#thanks {
 
+}
 /*h2{
 	font:italic 22px Georgia;
 	letter-spacing: 1px;
@@ -104,6 +107,13 @@ h2 a:hover{
 	text-align: center;
 }
 */
+
+
+
+h2{
+	font:normal 22px Courier;
+	/*line-height:30px;*/
+}
 
 h3{
 	font:normal 12px Courier;
