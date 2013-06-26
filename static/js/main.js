@@ -70,7 +70,7 @@ function onFrame(event) {
     for (var i = 0; i < count; i++) {
         var item = project.activeLayer.children[i];
         
-        setTimeout(2000);
+        // setTimeout(2000);
         item.position.x += 5;
 
         // group1.position.x += 1;;
