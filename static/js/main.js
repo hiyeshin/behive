@@ -10,7 +10,7 @@ var count = 200;
 function firstRow(){
     // var group1 = new Group();
     var hexagon1 = new Path.RegularPolygon({
-        center: [70,70],
+        center: [70,50],
         sides: 6,
         radius: 60,
         fillColor: '#bcdfde',
@@ -39,7 +39,7 @@ function firstRow(){
 function secondRow(){
     var group2 = new Group();
     var hexagon2 = new Path.RegularPolygon({
-        center: [70,175],
+        center: [70,155],
         sides: 6,
         radius: 60,
         fillColor: '#eef7f7',
@@ -69,9 +69,10 @@ function onFrame(event) {
 
     for (var i = 0; i < count; i++) {
         var item = project.activeLayer.children[i];
-        
+
         // setTimeout(2000);
         item.position.x += 5;
+        item.opacity
 
         // group1.position.x += 1;;
         
