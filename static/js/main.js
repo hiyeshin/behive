@@ -10,23 +10,13 @@ var count = 0;
 
 handleImage('mona');
 
-// var text = new PointText({
-//     point: view.center,
-//     justification: 'center',
-//     fillColor: 'white',
-//     fontSize: 15,
-//     content: window.FileReader
-//         ? 'Drag & drop an image from your desktop'
-//         : 'To drag & drop images, please use Webkit, Firefox, Chrome or IE 10'
-// });
-
 function createPiece() {
     var group = new Group();
     var hexagon = new Path.RegularPolygon({
         center: view.center,
         sides: 6,
         radius: 200,
-        fillColor: '#89E0DA',
+        fillColor: '#eef7f7',
         parent: group
     });
     for (var i = 0; i < 2; i++) {
@@ -34,7 +24,7 @@ function createPiece() {
             closed: true,
             selected: true,
             parent: group,
-            fillColor: i == 0 ? '#C4F7F3' : '#3CB5AC'
+            fillColor: i == 0 ? '#deefee' : '#d0e8e8'
         });
         for (var j = 0; j < 3; j++) {
             var index = (i * 2 + j) % hexagon.segments.length;
@@ -99,35 +89,5 @@ function onFrame(event) {
 function onResize() {
     project.activeLayer.position = view.center;
 }
-
-//       var hexagon = new Path();
-// // Color our path black
-//       hexagon.strokeColor = '#89E0DA';
-//       hexagon.fillColor = '#C4F7F3';
- 
-//       // How many points do we want our object to have
-//       var points = 6;
-//       // How large should it be
-//       var radius = 60;
-// // 0 to 2PI is a circle, so divide that by the number of points
-// // in our object and that's how many radians we should put a new
-// // point in order to draw the shape
-//       var angle = ((2 * Math.PI) / points);
- 
-// // For as many vertices in the shape, add a point
-//       for(i = 0; i <= points; i++) {
- 
-//   // Add a new point to the object
-//             hexagon.add(new Point(
-//     // Radius * Math.cos(number of radians of the point) is the x position
-//             radius * Math.cos(angle * i), 
-//     // And the same thing with Math.sin for the y position of the point
-//             radius * Math.sin(angle * i)
-//       ));
-//       }
- 
-// // Offset the shape so it's fully displayed on the canvas
-//       hexagon.position.x += 200;
-//       hexagon.position.y += 200;
 
  });
