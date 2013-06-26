@@ -54,13 +54,25 @@ font-style: normal;
 }
 
 #logo {
+	z-index:1000;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-top: 5%;
-	/*vertical-align: middle;*/
+}
+
+#left{
+	position: absolute;
+	top: 40%;
+	left:4%;
+}
+
+#right{
+	position: absolute;
+	top: 40%;
+	left:40%;
 }
 
 
@@ -122,14 +134,13 @@ p{
 
  #container {
 	position: absolute;
-	top:130px;
-	/*left:0px;*/ 
+	top:150px;
 	width:100%;
-	min-height:100%;
+	height:100%;
 	height: auto !important;
 	min-width:1150px;
 	margin: 0 auto -50px;
-	/*background-image: url('/static/img/linedpaper.png');*/
+	vertical-align: middle;
 }
 
 
@@ -147,39 +158,22 @@ p{
 
 
 article:hover {
-	/*background-color:#f8f8f8;*/
-	/*background-image: url('/static/img/linedpaper.png');*/
-	/*background-repeat:repeat-x;*/
 }
 
 .displayed {
 	display: block;
 	margin-left:auto;
 	margin-right:auto;
-
-
 }
-
-
-/*#header{
-	position: absolute;
-	z-index:1000;
-	top: 25px;
-	left: 6%;
-	overflow:hidden;
-	color:#000;
-}*/
-
 
 
 .dropcap{
-	color: #887072;
-	font:normal 48px "ltc-bodoni-175", Georgia;
-	line-height:20px;
+	color: #319B96;
+	font:normal 22px Courier;
+	/*line-height:20px;*/
 	letter-spacing:1px;
 
 }
-
 
 .rollover{
 	display: block;
