@@ -1,93 +1,90 @@
-$(document).ready( function(){
 
-var values = {
-    amount: 10
-};
+var group1, group2, group3, group4, raster;
+var piece1 = firstRow()
+var piece2 = secondRow()
+// var piece3 = thirdRow()
+var hexagon1;
+var count = 200;
 
-var raster, group;
-var piece = createPiece();
-var count = 0;
 
-handleImage('mona');
-
-function createPiece() {
-    var group = new Group();
-    var hexagon = new Path.RegularPolygon({
-        center: view.center,
+function firstRow(){
+    // var group1 = new Group();
+    var hexagon1 = new Path.RegularPolygon({
+        center: [70,70],
         sides: 6,
-        radius: 200,
-        fillColor: '#eef7f7',
-        parent: group
+        radius: 60,
+        fillColor: '#bcdfde',
+        // parent: group1
     });
-    for (var i = 0; i < 2; i++) {
-        var path = new Path({
-            closed: true,
-            selected: true,
-            parent: group,
-            fillColor: i == 0 ? '#deefee' : '#d0e8e8'
-        });
-        for (var j = 0; j < 3; j++) {
-            var index = (i * 2 + j) % hexagon.segments.length;
-            path.add(hexagon.segments[index].clone());
-        }
-        path.add(hexagon.bounds.center);
-    }
-    // Remove the group from the document, so it is not drawn:
-    group.remove();
-    return group;
+    hexagon1.rotate(30);
+
+    for (i = 0; i < 30; i++){
+      hexagon1.position.x += 60;
+      }
+
+    // var clonedHex1 = hexagon1.clone()
+
+    // for (var i = 0; i < count; i++) {
+    // // The center position is a random point in the view:
+    //   clonedHex1.position += new Point (75,0);
+    //   clonedHex1.push(group1)
+    //   }
+    
+
+    
+    // return hexagon1;
+    return group1;
 }
 
-function handleImage(image) {
-    count = 0;
-    var size = piece.bounds.size;
+function secondRow(){
+    var group2 = new Group();
+    var hexagon2 = new Path.RegularPolygon({
+        center: [70,175],
+        sides: 6,
+        radius: 60,
+        fillColor: '#eef7f7',
+        parent: group2
+    });
 
-    if (group)
-        group.remove();
+    // var clonedHex2 = hexagon2.clone()
 
-    raster = new Raster(image);
-    raster.remove();
+    // for (var i = 0; i < count; i++) {
+    // // The center position is a random point in the view:
+    //   clonedHex1.position += new Point (75,0);
+    //   clonedHex1.push(group1)
+    //   }
 
-    // Transform the raster, so it fills the view:
-    raster.fitBounds(view.bounds, true);
-    group = new Group();
-    group.applyMatrix = true;
-    for (var y = 0; y < values.amount; y++) {
-        for (var x = 0; x < values.amount; x++) {
-            var copy = piece.clone();
-            copy.position += size * [x + (y % 2 ? 0.5 : 0), y * 0.75];
-            group.addChild(copy);
-        }
-    }
+    hexagon2.rotate(30);
 
-    // Transform the group so it covers the view:
-    group.fitBounds(view.bounds, true);
-    group.scale(1.1);
+    return group2;
 }
+
+firstRow();
+secondRow();
+
 
 function onFrame(event) {
-    // Loop through the uncolored hexagons in the group and fill them
-    // with the average color:
-    var length = Math.min(count + values.amount, group.children.length);
-    for (var i = count; i < length; i++) {
-        piece = group.children[i];
-        var hexagon = piece.children[0];
-        var color = raster.getAverageColor(hexagon);
-        if (color) {
-            hexagon.fillColor = color;
-            var top = piece.children[1];
-            top.fillColor = color.clone();
-            top.fillColor.brightness *= 1.5;
+      console.log(event.time);
 
-            var right = piece.children[2];
-            right.fillColor = color.clone();
-            right.fillColor.brightness *= 0.5;
+
+    for (var i = 0; i < count; i++) {
+        var item = project.activeLayer.children[i];
+        
+        setTimeout(2000);
+        item.position.x += 5;
+
+        // group1.position.x += 1;;
+        
+
+        // If the item has left the view on the right, move it back
+        // to the left:
+        if (item.bounds.left > view.size.width) {
+            item.position.x = -item.bounds.width;
         }
+
+      
+            // setTimeout(5000);
+    
+            // group1.position.x += 70;
     }
-    count += values.amount;
 }
-
-function onResize() {
-    project.activeLayer.position = view.center;
-}
-
- });
