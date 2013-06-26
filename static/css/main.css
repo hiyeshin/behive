@@ -27,8 +27,8 @@ html {
 
 body{
 	height: 100%;
-	background-color:#f4fafa;
-	background-image:url('/static/img/splash_page.png');
+	background-color:#ffffff;
+	/*background-image:url('/static/img/splash_page.png');*/
 	background-position:top;
 	background-size: 100% auto;
 	/*background-size: contain;*/
