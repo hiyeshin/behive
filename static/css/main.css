@@ -53,8 +53,13 @@ font-style: normal;
 
 }
 
-#third {
-	margin-left:-10px;
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	/*vertical-align: middle;*/
 }
 
 
@@ -91,22 +96,7 @@ font-style: normal;
 #thanks {
 
 }
-/*h2{
-	font:italic 22px Georgia;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height:30px;
-}
 
-h2 a:hover{
-	color: #887072;
-	text-decoration: none;
-}
-
-.project-name{
-	text-align: center;
-}
-*/
 
 
 
@@ -165,6 +155,7 @@ article:hover {
 	display: block;
 	margin-left:auto;
 	margin-right:auto;
+	
 
 }
 

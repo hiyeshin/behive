@@ -9,11 +9,12 @@
 <div id="container">       
     <div class = "row-fluid">
         <div class = "span12">
+            <img src="{{ url_for('static', filename='img/center_logo.png') }}" id = "logo">
              <div class = "row-fluid">
                  <div class="span6 offset6">
 
         <form method="POST" action="/" class = "email">
-            <img src="{{ url_for('static', filename='img/third.png') }}" id = "third">
+            <!-- <img src="{{ url_for('static', filename='img/center_logo.png') }}" id = "logo"> -->
             <h3>
             {% if form.errors %}
 
