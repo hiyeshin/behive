@@ -67,21 +67,23 @@ font-style: normal;
 
 #middle{
 	position: absolute;
-	top: 55%;
+	top: 58%;
 	left:15%;
 }
 
 
 #left{
 	position: absolute;
-	top: 63%;
+	top: 58%;
 	left:6%;
+	padding-right: 100px;
 }
 
 #right{
 	position: absolute;
 	top: 50%;
-	left:46%;
+	left:40%;
+	padding-left: 100px;
 }
 
 
