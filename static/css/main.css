@@ -18,6 +18,14 @@ ul {list-style:none;}
 .hidden{display:none;}
 /*-----------------------------------------------*/
 
+/*desktop*/
+@media (min-width: 1200px){
+}
+
+/*mobile phone*/
+@media (max-width: 480px){
+	
+}
 
 html {
 	width: 100%;
