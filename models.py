@@ -10,6 +10,8 @@ class Log(Document):
 
 class User(Document):
 	email = EmailField(max_length=120, required=True, verbose_name="Email: ")
+	first = StringField()
+	last = StringField()
 	timestamp = DateTimeField(default=datetime.now())
 
 # Create a Validation Form from the Idea model

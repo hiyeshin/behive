@@ -28,6 +28,8 @@ def index():
 		# get form data - create new idea
 		user = models.User()
 		user.email = request.form.get('email','anonymous')
+		user.first = request.form.get('first', 'John')
+		user.last = request.form.get('last', 'Doe')
 		user.save() # save it
 
 		# redirect to the new idea page

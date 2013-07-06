@@ -4,3 +4,5 @@ from flask import Flask, session
 
 class RegisterForm(Form):
 	email = EmailField('Email Address', validators=[], description="Enter your email address.")
+	first = TextField('First Name', validators = [], description = "First Name")
+	last = TextField('Last Name', validators = [], description = "Last Name")
