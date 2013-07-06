@@ -65,6 +65,13 @@ font-style: normal;
 	padding-top: 5%;
 }
 
+#middle{
+	position: absolute;
+	top: 55%;
+	left:15%;
+}
+
+
 #left{
 	position: absolute;
 	top: 63%;
@@ -74,7 +81,7 @@ font-style: normal;
 #right{
 	position: absolute;
 	top: 50%;
-	left:41%;
+	left:46%;
 }
 
 
@@ -101,12 +108,16 @@ font-style: normal;
 	letter-spacing:2px;
 	padding:3.5px 22px;
 	text-decoration:none;
-	margin-top: -15px;
+	margin-top: -40px;
 }
 
 .email-btn:active {
 	position:relative;
 	top:1px;
+}
+
+.email-btn:hover {
+	color: #777777;
 }
 
 
@@ -123,8 +134,8 @@ h3{
 
 
 p{
-	font:normal 12px Georgia;
-	line-height:18px;
+	font:normal 16px Courier;
+	line-height:12px;
 }
 
  #container {
