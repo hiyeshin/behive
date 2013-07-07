@@ -3,6 +3,6 @@ from flaskext.wtf.html5 import EmailField
 from flask import Flask, session
 
 class RegisterForm(Form):
-	email = EmailField('Email Address', validators=[], description="Enter your email address.")
+	email = EmailField('Email Address', validators=[])
 	# first = TextField('First Name', validators = [], description = "First Name")
 	# last = TextField('Last Name', validators = [], description = "Last Name")

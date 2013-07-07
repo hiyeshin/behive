@@ -28,7 +28,6 @@
 
     <!-- left column -->
     <div class = "row-fluid">
-        <!-- <img src="{{ url_for('static', filename='img/center_logo.png') }}" id = "logo" class = "visible-desktop"> -->
         <div class = "span3 offset2">
             <article id = "left">
                 <h2>Thank <span class = "dropcap">U</span> for<br/> 
@@ -42,9 +41,6 @@
             <article>
         </div>
 
-  <!--       <div class = "span3" id = "middle">
-        </div>
- -->
               
         <!-- right column   -->
         <div class = "span3 offset2" >
@@ -66,13 +62,13 @@
                     {% endif %}
 
                     {{ form.email.label(class='myLabelCssClass') }}
-                    {{ form.email(class='myTextboxCssClass') }}
+                    {{ form.email(class='myLabelCssClass', placeholder='honeybee@behive.me') }}
 
                     {{ form.first.label(class='myLabelCssClass') }}
-                    {{ form.first(class='myTextboxCssClass') }}
+                    {{ form.first(lass='myLabelCssClass',placeholder='Honey') }}
 
                     {{ form.last.label(class='myLabelCssClass') }}
-                    {{ form.last(class='myTextboxCssClass') }}
+                    {{ form.last(lass='myLabelCssClass',placeholder='Bee') }}
                     </h3>
                     <br/>
                     <button type="submit" class="email-btn" id = "btnbtn">Submit⬣</button>

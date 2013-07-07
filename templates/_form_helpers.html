@@ -11,5 +11,6 @@
 
 {# render a textarea #}
 {% macro render_textarea(field, class="", cols=40, rows=5) %}
+
   <textarea class="{{class}}" cols="{{cols}}" rows="{{rows}}" id="{{ field.id }}" name="{{ field.id }}">{% if field.data %}{{field.data}}{% endif %}</textarea>
 {% endmacro %}
