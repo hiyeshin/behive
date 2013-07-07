@@ -56,7 +56,7 @@ font-style: normal;
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-top: 8%;
-	padding-left: 14%;
+	padding-left: 12%;
 	padding-right: 10%;
 }
 
@@ -80,7 +80,7 @@ font-style: normal;
 	z-index: 900;
 	display: block;
 	
-	margin-top:-92%;
+	margin-top:-96%;
 	margin-bottom: 20%;
 
 	padding-top: 30%;
@@ -104,9 +104,9 @@ font-style: normal;
 	
 	margin-top:-110%;
 	margin-bottom: 20%;
-	padding-top: 30%;
-	padding-left: 15%;
-	padding-right:40%;
+	padding-top: 26%;
+	padding-left: 20%;
+	padding-right:30%;
 	padding-bottom:10%;
 	
 }
