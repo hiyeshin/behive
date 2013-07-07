@@ -5,34 +5,37 @@
 {% block body %}
 
 <div id="container-fluid"> 
-
+    
+ <!-- this is for center logo for desktop version -->
     <div class = "row-fluid">
-        <div class = "span12">      
+        <div class = "span12" id = "bg">      
             <img src="{{ url_for('static', filename='img/center_logo.png') }}" id = "logo" class = "visible-desktop">
         </div>
     </div>
+   
     
+    <!-- this is for center logo mobile and tablet -->
      <div class = "row-fluid">
         <div class = "span4 offset4">      
-            <img src="{{ url_for('static', filename='img/center.png') }}" id = "logo" class = "hidden-desktop">
+            <img src="{{ url_for('static', filename='img/center.png') }}" id = "logo-mobile" class = "hidden-desktop">
         </div>
     </div>
 
-
+    <!-- left column -->
     <div class = "row-fluid">
-        <div class = "span5">
+        <div class = "span3 offset2">
             <article id = "left">
                 <h2>Thank <span class = "dropcap">U</span> for<br/> 
                     your interest!<br/><br/>
                     The hive is being<br/> 
                     built as we speak.
-                    </h2>
+                </h2>
             <article>
         </div>
-                
-        <div class = "span5 offset2" >
+              
+        <!-- right column   -->
+        <div class = "span3 offset2" >
             <article id = "right">
-                     <!-- <img src="{{ url_for('static', filename='img/right.png') }}" class = "visible-desktop" > -->
                     <form method="POST" action="/" >
                     <h3>Sign up and
                         see what all the
@@ -63,6 +66,8 @@
                     </form>
                 <article>
         </div>
+
+
 
 
         <!--   <div class = "row-fluid">
