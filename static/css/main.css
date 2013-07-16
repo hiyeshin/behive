@@ -80,13 +80,13 @@ font-style: normal;
 	z-index: 900;
 	display: block;
 	
-	margin-top:-110%;
-	margin-bottom: 20%;
+	margin-top:-120%;
+	margin-bottom: 50%;
 
-	padding-top: 30%;
+	padding-top: 40%;
 	padding-left: 18%;
 	/*padding-right:5%;*/
-	padding-bottom:10%;
+	padding-bottom:50%;
 	
 }
 
@@ -102,12 +102,12 @@ font-style: normal;
 	/*position:  absolute;*/
 	display: block;
 	
-	margin-top:-110%;
-	margin-bottom: 20%;
-	padding-top: 26%;
+	margin-top:-120%;
+	margin-bottom: 50%;
+	padding-top: 40%;
 	padding-left: 20%;
 	padding-right:30%;
-	padding-bottom:10%;
+	padding-bottom:55%;
 	
 }
 
@@ -148,23 +148,20 @@ font-style: normal;
 	color: #777777;
 }
 
-
 h2{
 	font:normal 16px Courier;
-	/*line-height:30px;*/
-}
+	}
 
 h3{
 	font:normal 14px Courier;
-	/*line-height:30px;*/
-}
-
-
+	}
 
 p{
 	font:normal 16px Courier;
 	line-height:12px;
-}
+	}
+
+
 
 
 #push, #footer{
@@ -194,3 +191,76 @@ p{
 }
 
 
+@media (min-width: 1200px) {
+	h2{
+	font:normal 16px Courier;
+	}
+
+	h3{
+	font:normal 14px Courier;
+	}
+
+	p{
+	font:normal 16px Courier;
+	line-height:12px;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	h2{
+	font:normal 16px Courier;
+	}
+
+	h3{
+	font:normal 14px Courier;
+	}
+
+	p{
+	font:normal 16px Courier;
+	line-height:12px;
+	}
+}
+
+
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	h2{
+		font:normal 12px Courier;
+	/*line-height:30px;*/
+	}
+
+	h3{
+		font:normal 10px Courier;
+	/*line-height:30px;*/
+	}
+
+
+	p{
+		font:normal 12px Courier;
+	/*line-height:12px;*/
+	} 
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	display: none;
+
+	h2{
+	font:normal 12px Courier;
+	/*line-height:30px;*/
+	}
+
+	h3{
+	font:normal 10px Courier;
+	/*line-height:30px;*/
+	}
+
+
+	p{
+	font:normal 12px Courier;
+	/*line-height:12px;*/
+	} 
+
+}
