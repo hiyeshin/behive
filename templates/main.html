@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<div id="container"> 
+<div id="container-fluid"> 
 
  <!-- this is for center logo for desktop version -->
     <div class = "row-fluid">
@@ -29,6 +29,9 @@
 
     <!-- left column -->
     <div class = "row-fluid">
+         <div class = "hidden-desktop">
+                    <br/> <br/><br/><br/><br/><br/><br/><br/ >
+                </div>
         <div class = "span3 offset2">
             <article id = "left">
                 <h2>Thank <span class = "dropcap">U</span> for<br/> 
@@ -41,11 +44,12 @@
                         buzzzzzzz is about.</h2>
                 <div class = "hidden-desktop">
                     <br/> <br/><br/><br/><br/><br/><br/><br/ > <br/><br/><br/><br/><br/><br/>
+                   
                 </div>
             <article>
         </div>
 
-              
+        <div class = "row-fluid">      
         <!-- right column   -->
         <div class = "span3 offset2" >
             <article id = "right" class = "pull-left">
@@ -77,6 +81,7 @@
                     </form>
                 <article>
         </div>
+    </div>
     </div>          
 </div>
     

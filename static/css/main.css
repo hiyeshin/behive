@@ -27,7 +27,6 @@ html {
 
 body{
 	position: relative;
-	/*height: 100%;*/
 	background-color:#ffffff;
 	background-image:url('/static/img/tile.png');
 	background-position:top;
@@ -41,11 +40,6 @@ font-weight: normal;
 font-style: normal;
 }
 
-
-#bg {
-	/*background-image:url('/static/img/center_logo.png');*/
-
-}
 
 #logo {
 	position:relative;
@@ -66,12 +60,8 @@ font-style: normal;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	/*margin-top: auto;
-	margin-bottom: auto;*/
-	/*padding-top:30px/;*/
-	/*padding-left: 40%;
-	padding-right: 40%;*/
-	padding-bottom:40%;
+	margin-top: -20%;
+	padding-bottom:20%;
 }
 
 
@@ -80,20 +70,39 @@ font-style: normal;
 	z-index: 900;
 	display: block;
 	
-	margin-top:-120%;
+	margin-top:-115%;
 	margin-bottom: 50%;
 
-	padding-top: 40%;
-	padding-left: 18%;
-	/*padding-right:5%;*/
-	padding-bottom:50%;
+	padding-top: 30%;
+	padding-left: 8%;
+	padding-right:25%;
+	padding-bottom:10%;
 	
 }
 
-#middle {
+/*#left-mobile {
+	position:relative;
+	z-index: 900;
 	display: block;
-	padding-left: 100px;
-	padding-right: 50px;
+	
+	margin-top:-120%;
+	margin-bottom: 50%;
+
+	padding-top: 35%;
+	padding-left: 8%;
+	padding-right:25%;
+	padding-bottom:50%;
+	
+}*/
+
+#middle {
+	margin-left: 35%;
+	margin-right: 65%;
+	display: block;
+	padding-left: 110px;
+	padding-right: 60px;
+	/*margin-top:-60%;*/
+	/*margin-bottom: -100%;*/
 
 }
 
@@ -102,10 +111,24 @@ font-style: normal;
 	/*position:  absolute;*/
 	display: block;
 	
+	margin-top:-125%;
+	margin-bottom: 70%;
+	padding-top: 39%;
+	padding-left: 30%;
+	padding-right:30%;
+	padding-bottom:55%;
+	
+}
+
+#right-mobile {
+	z-index: 800;
+	/*position:  absolute;*/
+	display: block;
+	
 	margin-top:-120%;
 	margin-bottom: 50%;
-	padding-top: 40%;
-	padding-left: 20%;
+	padding-top: 35%;
+	padding-left: 38%;
 	padding-right:30%;
 	padding-bottom:55%;
 	
@@ -118,26 +141,7 @@ font-style: normal;
 	padding-left: 30px;
 }
 
-.email-btn {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background-color:#48bab0;
-	/*background-color:transparent;*/
-	-moz-border-radius:20px;
-	-webkit-border-radius:20px;
-	border-radius:20px;
-	border:0px solid #dcdcdc;
-	display:inline-block;
-	color:#444444;
-	font-family:Courier;
-	font-size:14px;
-	font-weight:bold;
-	letter-spacing:2px;
-	padding:3.5px 22px;
-	text-decoration:none;
-	margin-top: -40px;
-}
+
 
 .email-btn:active {
 	position:relative;
@@ -149,20 +153,40 @@ font-style: normal;
 }
 
 h2{
-	font:normal 16px Courier;
+	font:normal 15px Courier;
+	line-height:13px;
 	}
 
 h3{
-	font:normal 14px Courier;
+	font:normal 13px Courier;
 	}
 
-p{
-	font:normal 16px Courier;
-	line-height:12px;
+p li{
+	font:normal 15px Courier;
+	line-height:11px;
 	}
 
 
-
+.email-btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#48bab0;
+	/*background-color:transparent;*/
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:0px solid #dcdcdc;
+	display:inline-block;
+	color:#444444;
+	font-family:Courier;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:2px;
+	padding:3px 14px 3px 14px;
+	text-decoration:none;
+	margin-top: -40px;
+}
 
 #push, #footer{
 	font: normal 11px "Georgia";
@@ -200,26 +224,49 @@ p{
 	font:normal 14px Courier;
 	}
 
-	p{
+	p li{
 	font:normal 16px Courier;
 	line-height:12px;
 	}
+
+	.email-btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#48bab0;
+	/*background-color:transparent;*/
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	border:0px solid #dcdcdc;
+	display:inline-block;
+	color:#444444;
+	font-family:Courier;
+	font-size:14px;
+	font-weight:bold;
+	letter-spacing:2px;
+	padding:3.5px 22px;
+	text-decoration:none;
+	margin-top: -40px;
+}
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	h2{
-	font:normal 16px Courier;
-	}
-
-	h3{
 	font:normal 14px Courier;
 	}
 
-	p{
-	font:normal 16px Courier;
+	h3{
+	font:normal 12px Courier;
+	}
+
+	p li{
+	font:normal 14px Courier;
 	line-height:12px;
 	}
+
+	
 }
 
 
@@ -237,10 +284,22 @@ p{
 	}
 
 
-	p{
+	p li{
 		font:normal 12px Courier;
 	/*line-height:12px;*/
 	} 
+
+	#left {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#right {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
  
 /* Landscape phones and down */
@@ -253,14 +312,21 @@ p{
 	}
 
 	h3{
-	font:normal 10px Courier;
+	font:normal 11px Courier;
 	/*line-height:30px;*/
 	}
 
 
-	p{
+	p li{
 	font:normal 12px Courier;
 	/*line-height:12px;*/
 	} 
 
+	#left {
+		text-align: left;
+	}
+
+	#right {
+		/*text-align: center;*/
+	}
 }
