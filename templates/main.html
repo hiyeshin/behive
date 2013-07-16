@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<div id="container-fluid"> 
+<div id="container"> 
 
  <!-- this is for center logo for desktop version -->
     <div class = "row-fluid">
@@ -34,9 +34,12 @@
                     your interest!<br/><br/>
                     The hive is being<br/> 
                     built as we speak.
-                </h2>
+                </h2><br/>
+                <h2>Sign up and
+                        see what all the
+                        buzzzzzzz is about.</h2>
                 <div class = "hidden-desktop">
-                    <br/> <br/><br/><br/><br/><br/><br/><br / > <br/><br/><br/><br/><br/><br/>
+                    <br/> <br/><br/><br/><br/><br/><br/><br/ > <br/><br/><br/><br/><br/><br/>
                 </div>
             <article>
         </div>
@@ -46,9 +49,7 @@
         <div class = "span3 offset2" >
             <article id = "right" class = "pull-left">
                     <form method="POST" action="/" >
-                    <h3>Sign up and
-                        see what all the
-                        buzzzzzzz is about.</h3>
+                    
                     <h3>
                     {% if form.errors %}
 
