@@ -1,0 +1,146 @@
+/* Put your custom CSS here */
+html {
+	width: 100%;
+	height: 100%;
+
+}
+
+
+body{
+	position: relative;
+	background-color:#48bab0;
+	/*background-image:url('/static/img/tile.png');*/
+	/*background-position:top;
+	background-repeat:repeat;*/
+}
+
+page1{
+	position: relative;
+	background-color:#48bab0;
+	/*background-image:url('/static/img/tile.png');*/
+	/*background-position:top;
+	background-repeat:repeat;*/
+}
+
+
+@font-face {
+font-family: "Courier", Georgia, Serif;
+font-weight: normal;
+font-style: normal;
+}
+
+#logo-mobile {
+	width: 150px; 
+	height: 150px; 
+	position: relative; 
+	/*background-color: #ffffff; */
+	border: 0px;
+}
+
+
+#left {
+	
+	
+}
+
+
+#right {
+	
+	
+}
+
+#right-mobile {
+	z-index: 800;
+	/*position:  absolute;*/
+	display: block;
+	
+	margin-top:-120%;
+	margin-bottom: 50%;
+	padding-top: 35%;
+	padding-left: 38%;
+	padding-right:30%;
+	padding-bottom:55%;
+	
+}
+
+
+
+#btnbtn {
+	margin-left: 62px;
+	padding-left: 30px;
+}
+
+
+
+.email-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.email-btn:hover {
+	color: #777777;
+}
+
+h2{
+	font:normal 12px Courier;
+	line-height:10px;
+	}
+
+h3{
+	font:normal 12px Courier;
+	}
+
+label{
+	font:normal 8px Courier;
+	line-height:10px;
+	}
+
+
+.email-btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#48bab0;
+	/*background-color:transparent;*/
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:0px solid #dcdcdc;
+	display:inline-block;
+	color:#444444;
+	font-family:Courier;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:2px;
+	padding:3px 14px 3px 14px;
+	text-decoration:none;
+	margin-top: -40px;
+}
+
+#push, #footer{
+	font: normal 11px "Georgia";
+	letter-spacing: 2px;
+	/*position: absolute;*/
+	/*margin-top: -150px;
+	margin: 0px auto;*/
+	height: 50px;
+	padding-left: 40%;
+	/*clear: both;*/
+	/*padding-top:20px;*/
+}
+
+
+
+.dropcap{
+	color: #319B96;
+	font:normal 22px Courier;
+	/*line-height:20px;*/
+	letter-spacing:1px;
+
+}
+
+.rollover{
+	display: block;
+}
+
+

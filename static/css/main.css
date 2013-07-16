@@ -47,8 +47,8 @@ font-style: normal;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-/*	margin-top: auto;
-	margin-bottom: auto;*/
+	margin-top: auto;
+	margin-bottom: auto;
 	padding-top: 8%;
 	padding-left: 12%;
 	padding-right: 10%;
@@ -71,7 +71,7 @@ font-style: normal;
 	display: block;
 	
 	margin-top:-115%;
-	margin-bottom: 50%;
+	margin-bottom: 30%;
 
 	padding-top: 30%;
 	padding-left: 8%;
@@ -114,7 +114,7 @@ font-style: normal;
 	margin-top:-125%;
 	margin-bottom: 70%;
 	padding-top: 39%;
-	padding-left: 25%;
+	padding-left: 24%;
 	padding-right:30%;
 	padding-bottom:55%;
 	
@@ -312,7 +312,7 @@ p li{
 	}
 
 	h3{
-	font:normal 11px Courier;
+	font:normal 12px Courier;
 	/*line-height:30px;*/
 	}
 

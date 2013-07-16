@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+   
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-role="content">
+        <div id = "logo-mobile">
+            <img src="{{ url_for('static', filename='img/center.png') }}" id = "logo-mobile"style="position: absolute; top: 50%; left: 60%; margin-left: -16px; margin-top: -18px">
+        </div>
+
+        <br/><br/><br/>
+        <div id = "left">
+        <h2>Thank <span class = "dropcap">U</span> for
+                    your interest!<br/><br/>
+                    The hive is being
+                    built as we speak.
+                </h2><br/>
+                <h2>Sign up and
+                        see what all the
+                        buzzzzzzz is about.
+        </h2>
+        </div>
+
+        <div id = "right">
+        <div data-role="fieldcontain">
+            <label for="email">
+                Email
+            </label>
+            <input name="email" id="email" placeholder="honeybee@behive.me" value="" type="email"
+            data-mini="true">
+        </div>
+        <div data-role="fieldcontain">
+            <label for="textinput2">
+                First Name
+            </label>
+            <input name="" id="textinput2" placeholder="First Name" value="" type="text"
+            data-mini="true">
+        </div>
+        <div data-role="fieldcontain">
+            <label for="textinput3">
+                Last Name
+            </label>
+            <input name="" id="textinput3" placeholder="Last Name" value="" type="text">
+        </div>
+        <input id="btn" type="submit" data-inline="true" data-icon="arrow-r" data-iconpos="right"
+        value="Submit" data-mini="true" a href = "/thanks_mobile">
+      </div>
+    </div>
+</div>
+</body>
+</html>

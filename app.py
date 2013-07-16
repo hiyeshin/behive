@@ -52,6 +52,40 @@ def index():
 def thanks():
 	return render_template("thanks.html")
 
+@app.route("/mobile", methods = ["GET", "POST"])
+def mobile():
+	# get email form from models.py
+	user_form = models.UserForm(request.form)
+
+	# if form was submitted and it is valid...
+	if request.method == "POST" and user_form.validate():
+
+		# get form data - create new idea
+		user = models.User()
+		user.email = request.form.get('email','anonymous')
+		user.first = request.form.get('first', 'John')
+		user.last = request.form.get('last', 'Doe')
+		user.save() # save it
+
+		# redirect to the new idea page
+		return redirect('/thanks_mobile' )
+
+	else:
+		if request.method=="POST" and request.form.getlist('categories'):
+			for c in request.form.getlist('categories'):
+				user_form.categories.append_entry(c)
+
+		# render the template
+		templateData = {
+			'users' : models.User.objects(),
+			'form' : user_form
+		}
+
+		return render_template("mobile.html", **templateData)
+
+@app.route("/thanks_mobile")
+def thanks_mobile():
+	return render_template("thanks_mobile.html")
 
 # error handler
 @app.errorhandler(404)
