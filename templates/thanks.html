@@ -2,27 +2,59 @@
 
 {% block styles %}{% endblock %}
 
- {% block body %}
+{% block body %}
 
-<div id="container">       
+<div id="container-fluid"> 
+
+ <!-- this is for center logo for desktop version -->
     <div class = "row-fluid">
-        <img src="{{ url_for('static', filename='img/center_logo.png') }}" id = "logo">
-                <div class = "span3 offset2" id = "left">
-                    <h2>Thank <span class = "dropcap">U</span> for<br/> 
-                    your interest!<br/><br/>
-                    The hive is being<br/> 
-                    built as we speak.</h2>
-                </div>
-
-<!--              <div class = "row-fluid"> -->
-                <div class="span3 offset2" id = "right">
-                    <br/></br/>
-
-                   
-                    <h2><span class = "dropcap">Thanks!</span></h2>
-
-                    <!-- <h2> -->
+        <div class = "span10" >      
+            <img src="{{ url_for('static', filename='img/center_logo.png') }}" id = "logo" class = "visible-desktop">
         </div>
-    </div><!-- closing whole row including header-->          
-</div> <!-- /container -->
+    </div>
+   
+    
+    <!-- this is for center logo mobile and tablet -->
+     <div class = "row-fluid">
+        <div class = "span4 offset4">      
+            <img src="{{ url_for('static', filename='img/center_mobile.png') }}" id = "logo-mobile" class = "hidden-desktop">
+        </div>
+    </div>
+
+    <!-- left column -->
+    <div class = "row-fluid">
+         <div class = "hidden-desktop">
+                    <br/> <br/><br/><br/><br/><br/><br/><br/ >
+                </div>
+        <div class = "span3 offset2">
+            <article id = "left">
+                <h2>Thank <span class = "dropcap">U</span> for
+                    your interest!<br/><br/>
+                    The hive is being
+                    built as we speak.
+                </h2><br/>
+                <h2>Sign up and see what all the
+                        buzzzzzzz is about.</h2>
+                <div class = "hidden-desktop">
+                    <br/> <br/><br/><br/><br/><br/><br/><br/ > <br/><br/><br/><br/><br/><br/>
+                   
+                </div>
+            <article>
+        </div>
+
+        <div class = "row-fluid">      
+        <!-- right column   -->
+        <div class = "span3 offset2" >
+            <article id = "right" class = "pull-left">
+                <h2><span class = "dropcap">Thank you for<br/>signing up!</span></h2><br/>
+                <a href="http://google.com"><h3>&#8592;Go Back to Behive Home</h3></a>
+            <article>
+        </div>
+    </div>
+    </div>          
+</div>
+    
+
 {% endblock %}
+
+
