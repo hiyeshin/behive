@@ -49,7 +49,7 @@ font-style: normal;
 	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
-	padding-top: 8%;
+	padding-top: 18%;
 	padding-left: 12%;
 	padding-right: 10%;
 }
@@ -74,26 +74,11 @@ font-style: normal;
 	margin-bottom: 30%;
 
 	padding-top: 30%;
-	padding-left: 8%;
+	padding-left: 0%;
 	padding-right:25%;
 	padding-bottom:10%;
 	
 }
-
-/*#left-mobile {
-	position:relative;
-	z-index: 900;
-	display: block;
-	
-	margin-top:-120%;
-	margin-bottom: 50%;
-
-	padding-top: 35%;
-	padding-left: 8%;
-	padding-right:25%;
-	padding-bottom:50%;
-	
-}*/
 
 #middle {
 	margin-left: 35%;
@@ -111,7 +96,7 @@ font-style: normal;
 	/*position:  absolute;*/
 	display: block;
 	
-	margin-top:-125%;
+	margin-top:-120%;
 	margin-bottom: 70%;
 	padding-top: 39%;
 	padding-left: 24%;
@@ -120,19 +105,7 @@ font-style: normal;
 	
 }
 
-#right-mobile {
-	z-index: 800;
-	/*position:  absolute;*/
-	display: block;
-	
-	margin-top:-120%;
-	margin-bottom: 50%;
-	padding-top: 35%;
-	padding-left: 38%;
-	padding-right:30%;
-	padding-bottom:55%;
-	
-}
+
 
 
 
@@ -217,7 +190,7 @@ p li{
 
 @media (min-width: 1200px) {
 	h2{
-	font:normal 16px Courier;
+	font:normal 18px Courier;
 	}
 
 	h3{
@@ -248,11 +221,138 @@ p li{
 	padding:3.5px 22px;
 	text-decoration:none;
 	margin-top: -40px;
+	}
+
+	#logo {
+	position:relative;
+	z-index:-1000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 8%;
+	padding-left: 12%;
+	padding-right: 10%;
 }
 }
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+	#logo {
+	position:relative;
+	z-index:-1000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 18%;
+	padding-left: 12%;
+	padding-right: 10%;
+	}
+
+
+#left {
+	position:relative;
+	z-index: 900;
+	display: block;
+	
+	margin-top:-115%;
+	margin-bottom: 30%;
+
+	padding-top: 30%;
+	padding-left: 0%;
+	padding-right:25%;
+	padding-bottom:10%;
+	
+	}
+
+
+#middle {
+	margin-left: 35%;
+	margin-right: 65%;
+	display: block;
+	padding-left: 110px;
+	padding-right: 60px;
+	/*margin-top:-60%;*/
+	/*margin-bottom: -100%;*/
+
+	}
+
+#right {
+	z-index: 800;
+	/*position:  absolute;*/
+	display: block;
+	
+	margin-top:-130%;
+	margin-bottom: 70%;
+	padding-top: 39%;
+	padding-left: 24%;
+	padding-right:30%;
+	padding-bottom:55%;
+	
+	}
+
+
+
+
+
+#btnbtn {
+	margin-left: 62px;
+	padding-left: 30px;
+	}
+
+
+
+.email-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.email-btn:hover {
+	color: #777777;
+}
+
+h2{
+	font:normal 15px Courier;
+	line-height:14px;
+	}
+
+h3{
+	font:normal 13px Courier;
+	}
+
+p li{
+	font:normal 15px Courier;
+	line-height:11px;
+	}
+
+
+.email-btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#48bab0;
+	/*background-color:transparent;*/
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:0px solid #dcdcdc;
+	display:inline-block;
+	color:#444444;
+	font-family:Courier;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:2px;
+	padding:3px 14px 3px 14px;
+	text-decoration:none;
+	margin-top: -40px;
+	}
+}
+
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 	h2{
 	font:normal 14px Courier;
 	}
@@ -262,9 +362,52 @@ p li{
 	}
 
 	p li{
-	font:normal 14px Courier;
+	font:normal 12px Courier;
 	line-height:12px;
 	}
+
+	#logo {
+	position:relative;
+	z-index:-1000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: 18%;
+	padding-left: 12%;
+	padding-right: 10%;
+	}
+
+	#left {
+	position:relative;
+	z-index: 900;
+	display: block;
+	
+	margin-top:-125%;
+	margin-bottom: 30%;
+
+	padding-top: 30%;
+	padding-left: 0%;
+	padding-right:25%;
+	padding-bottom:10%;
+	
+}
+
+
+	#right {
+	z-index: 800;
+	/*position:  absolute;*/
+	display: block;
+	
+	margin-top:-135%;
+	margin-bottom: 70%;
+	/*padding-top: 10%;*/
+	padding-left: 24%;
+	padding-right:30%;
+	/*padding-bottom:55%;*/
+	
+}
 
 	
 }
@@ -272,61 +415,125 @@ p li{
 
  
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	h2{
-		font:normal 12px Courier;
+		font:normal 15px Courier;
 	/*line-height:30px;*/
 	}
 
 	h3{
-		font:normal 10px Courier;
+		font:normal 14px Courier;
 	/*line-height:30px;*/
 	}
 
 
 	p li{
-		font:normal 12px Courier;
+		font:normal 14px Courier;
 	/*line-height:12px;*/
 	} 
 
+	
+	/*#left {
+	position:relative;
+	z-index: 900;
+	display: block;
+	
+	margin-top:-125%;
+	margin-bottom: 30%;
+
+	padding-top: 30%;
+	padding-left: 0%;
+	padding-right:25%;
+	padding-bottom:10%;
+	
+}*/
 	#left {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	position:relative;
+	z-index:-1000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -90%;
+	margin-bottom: auto;
+	/*padding-top: 8%;*/
+	padding-left: 12%;
+	padding-right: 10%;
 	}
 
+
 	#right {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	position:relative;
+	z-index:-800;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -80%;
+	margin-bottom: auto;
+	/*padding-top: 8%;*/
+	padding-left: 12%;
+	padding-right: 10%;
+	
+}
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	display: none;
-
 	h2{
-	font:normal 12px Courier;
+		font:normal 15px Courier;
 	/*line-height:30px;*/
 	}
 
 	h3{
-	font:normal 12px Courier;
+		font:normal 14px Courier;
 	/*line-height:30px;*/
 	}
 
 
 	p li{
-	font:normal 12px Courier;
+		font:normal 14px Courier;
 	/*line-height:12px;*/
 	} 
 
+	
+	/*#left {
+	position:relative;
+	z-index: 900;
+	display: block;
+	
+	margin-top:-125%;
+	margin-bottom: 30%;
+
+	padding-top: 30%;
+	padding-left: 0%;
+	padding-right:25%;
+	padding-bottom:10%;
+	
+}*/
 	#left {
-		text-align: left;
+	position:relative;
+	z-index:-1000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -90%;
+	margin-bottom: auto;
+	/*padding-top: 8%;*/
+	padding-left: 12%;
+	padding-right: 10%;
 	}
 
+
 	#right {
-		/*text-align: center;*/
-	}
+	position:relative;
+	z-index:-800;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -80%;
+	margin-bottom: auto;
+	/*padding-top: 8%;*/
+	padding-left: 12%;
+	padding-right: 10%;
+	
+}
 }

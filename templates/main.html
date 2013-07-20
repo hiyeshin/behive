@@ -39,8 +39,7 @@
                     The hive is being
                     built as we speak.
                 </h2><br/>
-                <h2>Sign up and
-                        see what all the
+                <h2>Sign up and see what all the
                         buzzzzzzz is about.</h2>
                 <div class = "hidden-desktop">
                     <br/> <br/><br/><br/><br/><br/><br/><br/ > <br/><br/><br/><br/><br/><br/>
@@ -67,13 +66,13 @@
                     </ul>
                     {% endif %}
 
-                    {{ form.email.label(class='myLabelCssClass') }}
-                    {{ form.email(class='myLabelCssClass', placeholder='honeybee@behive.me') }}
+                    <!-- {{ form.email.label(class='myLabelCssClass') }} -->
+                    <p>Email:</p>{{ form.email(placeholder='honeybee@behive.me') }}
 
-                    {{ form.first.label(class='myLabelCssClass') }}
+                    <p>First Name:</p>
                     {{ form.first(lass='myLabelCssClass',placeholder='Honey') }}
 
-                    {{ form.last.label(class='myLabelCssClass') }}
+                    <p>Last Name:</p>
                     {{ form.last(lass='myLabelCssClass',placeholder='Bee') }}
                     </h3>
                     <br/>
