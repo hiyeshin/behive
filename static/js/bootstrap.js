@@ -741,7 +741,7 @@
 
   }
 
-   $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+   // $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
 
 
   function clearMenus() {
