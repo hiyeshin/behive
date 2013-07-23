@@ -35,6 +35,7 @@
         <script src="{{ url_for('static', filename='js/jquery.smooth-scroll.min.js') }}"></script>
 
         {% block scripts %}
+            $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
 
        
         {% endblock %}
