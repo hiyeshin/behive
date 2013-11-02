@@ -13,18 +13,19 @@
     
     <!-- this is for center logo mobile and tablet -->
      <div class = "row">
-        <div class = "col-md-4 col-md-offset-4">     
+        <div class = "col-md-4 col-md-offset-4 col-xs-12">     
             <img src="{{ url_for('static', filename='img/center_mobile.png') }}" id = "logo-mobile" class = "hidden-md hidden-lg">
         </div>
     </div>
 
     <div class = "row">
-        <!--  <div class = "hidden-md">
+         <div class = "hidden-md hidden-lg hidden-sm">
                     <br/> <br/><br/><br/><br/><br/><br/><br/ >
-                </div> -->
-        <div class = "col-md-3 col-md-offset-2">
+         </div>
+         
+        <div class = "col-md-3 col-md-offset-2 col-sm-12 col-xs-12">
             <article id = "left">
-                <br/>
+                <br/><br/>
                 <h2>Thank <span class = "dropcap">U</span> for
                     your interest!<br/><br/>
                     The hive is being
@@ -32,18 +33,19 @@
                 </h2><br/>
                 <h2>Sign up and see what all the
                         buzzzzzzz is about.</h2>
-                <div class = "hidden-md">
-                    <br/> <br/><br/><br/><br/><br/><br/><br/ > <br/><br/><br/><br/><br/><br/>
+                <div class = "hidden-md hidden-sm">
+                    <br/> <br/><br/><br/><br/><br/><br/><br/ ><br/><br/><br/><br/><br/><br/>
                    
                 </div>
             <article>
         </div>
 
-        <div class = "row">      
-        <div class = "col-md-3 col-md-offset-2" >
+    <div class = "row">      
+        <div class = "col-md-3 col-md-offset-2 col-sm-12 col-xs-12" >
             <article id = "right">
                     <form method="POST" action="/" >
-                    
+                    <br/><br/><br/>
+                   
                     <h3>
                     {% if form.errors %}
 
@@ -65,7 +67,7 @@
                     <p>Last Name:</p>
                     {{ form.last(lass='myLabelCssClass',placeholder='Bee') }}
                     </h3>
-                    <br/>
+                    <br/><br/>
                     <button type="submit" data-role="button" class="btn email-btn" id = "btnbtn">Submit</button>
                     </form>
                 <article>
