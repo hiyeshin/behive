@@ -14,5 +14,4 @@ class User(Document):
 	last = StringField(max_length=50, verbose_name = "Last Name:")
 	timestamp = DateTimeField(default=datetime.now())
 
-# Create a Validation Form from the Idea model
 UserForm = model_form(User)

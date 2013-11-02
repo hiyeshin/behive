@@ -1,1 +1,0 @@
-$(document).off('touchstart.dropdown.data-api');

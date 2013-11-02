@@ -1,9 +1,15 @@
+# Behive Python Flask Code
+# Reference: http://itppyweb2012.herokuapp.com
+# You can see http://itppyweb.herokuapp.com
+# last revision on November 1, 2013
+# by Hiye Shin
+
+
 import os, datetime
 import re
 from unidecode import unidecode
 
 from flask import Flask,request, url_for, render_template, json, jsonify,redirect, abort
-# session is just a dictionary and flask converts it to cookie
 import models
 
 from flask.ext.mongoengine import mongoengine
@@ -16,31 +22,30 @@ app.config['CSRF_ENABLED'] = False
 mongoengine.connect('mydata', host=os.environ.get('MONGOLAB_URI'))
 app.logger.debug("Connecting to MongoLabs")
 
-# this is our main page
+
+
+# main page
 @app.route("/", methods = ["GET", "POST"])
 def index():
-	# get email form from models.py
+
 	user_form = models.UserForm(request.form)
 
-	# if form was submitted and it is valid...
 	if request.method == "POST" and user_form.validate():
 
-		# get form data - create new idea
 		user = models.User()
 		user.email = request.form.get('email','anonymous')
 		user.first = request.form.get('first', 'John')
 		user.last = request.form.get('last', 'Doe')
-		user.save() # save it
+		user.save() 
 
-		# redirect to the new idea page
 		return redirect('/thanks' )
+
 
 	else:
 		if request.method=="POST" and request.form.getlist('categories'):
 			for c in request.form.getlist('categories'):
 				user_form.categories.append_entry(c)
 
-		# render the template
 		templateData = {
 			'users' : models.User.objects(),
 			'form' : user_form
@@ -48,44 +53,10 @@ def index():
 
 		return render_template("main.html", **templateData)
 
+# thanks page
 @app.route("/thanks")
 def thanks():
 	return render_template("thanks.html")
-
-# @app.route("/mobile", methods = ["GET", "POST"])
-# def mobile():
-# 	# get email form from models.py
-# 	user_form = models.UserForm(request.form)
-
-# 	# if form was submitted and it is valid...
-# 	if request.method == "POST" and user_form.validate():
-
-# 		# get form data - create new idea
-# 		user = models.User()
-# 		user.email = request.form.get('email','anonymous')
-# 		user.first = request.form.get('first', 'John')
-# 		user.last = request.form.get('last', 'Doe')
-# 		user.save() # save it
-
-# 		# redirect to the new idea page
-# 		return redirect('/thanks_mobile' )
-
-# 	else:
-# 		if request.method=="POST" and request.form.getlist('categories'):
-# 			for c in request.form.getlist('categories'):
-# 				user_form.categories.append_entry(c)
-
-# 		# render the template
-# 		templateData = {
-# 			'users' : models.User.objects(),
-# 			'form' : user_form
-# 		}
-
-# 		return render_template("mobile.html", **templateData)
-
-# @app.route("/thanks_mobile")
-# def thanks_mobile():
-# 	return render_template("thanks_mobile.html")
 
 # error handler
 @app.errorhandler(404)
@@ -93,7 +64,7 @@ def page_not_found(error):
     return render_template('404.html'), 404
 
 
-# start the webserver
+
 if __name__ == "__main__":
 	app.debug = True
 	

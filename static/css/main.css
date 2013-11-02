@@ -1,3 +1,12 @@
+/*
+Behive Splash Page CSS
+Reference: http://itppyweb2012.herokuapp.com
+You can see http://itppyweb.herokuapp.com
+last revision on November 1, 2013
+by Hiye Shin
+*/
+
+
 /*CSS reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,11 +53,13 @@ font-style: normal;
 #logo {
 	position:relative;
 	z-index:-1000;
-	display: block;
-	margin-left: auto;
+	/*display: block;*/
+	/*margin-left: auto;
 	margin-right: auto;
 	margin-top: auto;
-	margin-bottom: auto;
+	margin-bottom: auto;*/
+	max-width: 120%;
+	height: auto;
 	padding-top: 18%;
 	padding-left: 12%;
 	padding-right: 10%;
@@ -106,9 +117,6 @@ font-style: normal;
 }
 
 
-
-
-
 #btnbtn {
 	margin-left: 62px;
 	padding-left: 30px;
@@ -124,6 +132,7 @@ font-style: normal;
 .email-btn:hover {
 	color: #777777;
 }
+
 
 h2{
 	font:normal 15px Courier;
